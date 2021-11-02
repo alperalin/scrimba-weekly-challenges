@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: papayawhip;
+    height: 100vh;
+    padding: 50px;
+}
+
+.wordCounter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.wordCounter__textarea,
+.wordCounter__scoreTable {
+    width: 100%;
+}
+
+.wordCounter__scoreTable {
+    font-size: 21px;
+    font-weight: 700;
+}
