@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gradient Generator</title>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="colorbox">
+            <h1 class="colorbox__title">Color Board</h1>
+            <label class="colorbox__label" for="colorInput">
+                <span class="colorbox__inputName">Color 1:</span>
+                <input type="color" name="colorboxInput" class="colorbox__input" id="firstColorInput">
+            </label>
+            <label class="colorbox__label" for="colorInput">
+                <span class="colorbox__inputName">Color 2:</span>
+                <input type="color" name="colorboxInput" class="colorbox__input" id="secondColorInput">
+            </label>
+            <label class="colorbox__label" for="colorInput">
+                <span class="colorbox__inputName">Split:</span>
+                <input type="range" name="colorboxInput" class="colorbox__input" id="splitInput" min="0" max="100">
+            </label>
+            <label class="colorbox__label" for="colorInput">
+                <span class="colorbox__inputName">Degree:</span>
+                <input type="range" name="colorboxInput" class="colorbox__input" id="degreeInput" min="0" max="180">
+            </label>
+            <button class="colorbox__button" id="generateRandomColorButton">
+                Suprise Me!
+            </button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
