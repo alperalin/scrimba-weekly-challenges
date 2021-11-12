@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pomodoro Timer</title>
+</head>
+
+<body>
+    <section class="container">
+        <header class="header">
+            <h1 class="title">
+                Pomodoro Timer
+            </h1>
+            <h2 id="subtitle" class="subtitle">Idle</h2>
+        </header>
+        <div class="pomodoro">
+            <div class="pomodoro__display">
+                <span id="pomodoroTimer" class="pomodoro__timer">00:00</span>
+            </div>
+            <div class="pomodoro__buttons">
+                <button id="workButton" class="pomodoro__button">Work</button>
+                <button id="shortBreakButton" class="pomodoro__button">Short Break</button>
+                <button id="longBreakButton" class="pomodoro__button">Long Break</button>
+            </div>
+            <ol id="pomodoroTimelist" class="pomodoro__timelist">
+
+            </ol>
+        </div>
+    </section>
+    <audio id="audio" class="audio">
+        <source src="./assets/done-audio.mp3" type="audio/mpeg">
+        <source src="./assets/done-audio.ogg" type="audio/ogg">
+    </audio>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
